@@ -1,0 +1,164 @@
+html {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.input-container {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+
+@media (width <= 1100px) {
+  aside {
+    display: none;
+  }
+}
+
+h1 {
+  font-size: clamp(20pt, 1.8vw, 28pt);
+}
+
+body {
+  margin: 0 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100vh;
+  background-image: url("luca-bravo-ESkw2ayO2As-unsplash.jpg");
+  background-size: cover;
+}
+
+#form-card{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+form > * {
+  margin: 1rem 0;
+}
+
+form p,
+main h1 {
+  padding: 0 5rem;
+}
+
+form button {
+  margin: 0 5rem;
+}
+
+#form-card > * {
+  margin: 0.5rem 1rem;
+}
+
+#form-card input {
+  border: 1px solid lightgray;
+  width: 100%;
+  /*width: 30ch;*/
+
+  border-radius: 4px;
+  padding: 0.2rem;
+}
+
+#form-card input:invalid {
+  /*border-color: red;*/
+}
+
+#form-card input:valid {
+  border-color: #24933B;
+}
+
+#form-card input:focus {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#form-card label {
+  display: block;
+  font-size: 0.8rem;
+  color: #242424;
+  font-weight: bold;
+}
+
+form a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #24933B;
+}
+
+button[type='submit'] {
+  background-color: #24933B;
+  color: #F7F7F7;
+  padding: 0.6rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 5px;
+  border-style: none;
+  border-radius: 3px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  /*
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  */
+  justify-content: center;
+  width: clamp(300px, 66vw, 1000px);
+  overflow: scroll;
+}
+
+main > * {
+  margin: 1.2rem 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: clamp(333px, 33vw, 500px);
+}
+
+footer {
+  margin: 1rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+.titlebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 15vh;
+}
+
+.title-text {
+  font-family: Aleo, serif;
+  font-size: clamp(2rem, 4vw, 4rem);
+}
+
+.titlebar > img {
+  width: 5vw;
+  min-width: 80px;
+  max-width: 120px;
+}
